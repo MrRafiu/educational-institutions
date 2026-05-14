@@ -1,0 +1,38 @@
+[data-aos] {
+  pointer-events: none;
+}
+
+[data-aos].aos-animate {
+  pointer-events: auto;
+}
+
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-timing-function: ease;
+}
+
+[data-aos="fade-up"] {
+  transform: translate3d(0, 24px, 0);
+}
+
+[data-aos="fade-down"] {
+  transform: translate3d(0, -24px, 0);
+}
+
+[data-aos="fade-left"] {
+  transform: translate3d(24px, 0, 0);
+}
+
+[data-aos="fade-right"] {
+  transform: translate3d(-24px, 0, 0);
+}
+
+[data-aos="fade-zoom-in"] {
+  transform: scale(0.95);
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+}
